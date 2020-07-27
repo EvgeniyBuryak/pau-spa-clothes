@@ -1,1 +1,33 @@
 // header style
+header {
+    background: url('../img/background.png');
+    height: 800px;
+
+    .container {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        top: 61px;
+        left: 405px;
+
+        .item {
+            display: flex; // !important;
+            justify-content: space-around;
+            align-items: center;
+            margin-right: 45px;
+
+            .item-title {
+                font-size: 14px;
+                line-height: 17px;
+                letter-spacing: 0.06em;
+            }
+
+            img {
+                width: 5px;
+                height: 5px;
+            }
+        }
+    }
+}
