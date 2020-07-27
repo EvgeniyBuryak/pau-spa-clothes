@@ -1,8 +1,19 @@
-mixin item-header(title)
-  .item
-    h1.item-title= title
+// Mixins for header
+mixin item-header(title, number)
+  .item(class='item_' + number)
+    h1.item-title.item-title_ident-right_5px= title
     img(src="./assets/img/Polygon.png")
 
+mixin item-logo(title)
+  .item.item-logo
+    img(src="./assets/img/Frame.png")
+    h2.item-title= title
+
+mixin item-right(title)
+  .item
+    h2.item-title= title
+    
+// Mixins for body
 mixin item(title, descr)
   .item
     h2.item-title= title
