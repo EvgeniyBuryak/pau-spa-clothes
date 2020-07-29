@@ -3,80 +3,107 @@
 // header style
 header {
     font-family: 'Montserrat', sans-serif;
-    background: url('../img/background.png');
+    background: url('../img/background.png') repeat-y;
+    margin: 0;
+    padding: 0;
     height: 800px;
+    width: 1920px;
+    padding-top: 50px;
 
     .container {
-        margin: 0;
-        padding: 0;
+        width: 1110px;
+        margin: 0 auto;
         display: flex;
         flex-direction: row;
-        justify-content: flex-start;
-        top: 50px;
-        left: 405px;
+        justify-content: space-between;
+        //align-items: center;
 
-        /*.item_w_105_h_17 {
-            width: 105px;
-            //height: 17px;
-        }
+        .first-screen__main-menu {
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
 
-        .item_w_109_h_17 {
-            width: 109px;
-            //height: 17px;
-        }
+            .item {
+                display: flex; // !important;
+                //justify-content: space-around;
+                align-items: center;
+                margin-right: 35px;
 
-        .item_w_89_h_17 {
-            width: 89px;
-            //height: 17px;
-        }*/
+                .item-title {
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 14px;
+                    line-height: 17px;
+                    letter-spacing: 0.03em;
+                    color: #212121;
+                }
 
-        .item {
-            display: flex; // !important;
-            //justify-content: space-around;
-            align-items: center;
-            margin-right: 35px;
+                .item-title_ident-right_5px {
+                    margin-right: 5px;
+                }
 
-            .item-title {
-                font-style: normal;
-                font-weight: 500;
-                font-size: 14px;
-                line-height: 17px;
-                letter-spacing: 0.03em;
-                color: #212121;
+                img {
+                    width: 5px;
+                    height: 5px;
+                }
             }
 
-            .item-title_ident-right_5px {
-                margin-right: 5px;
+            .item:nth-child(3) {
+                margin-right: 0px;
             }
+
+            .item-logo {
+                width: 201px;
+                height: 41px;
+                margin-left: 91px;
+                margin-right: 90px;
+
+                .item-title {
+                    font-weight: bold;
+                    font-size: 24px;
+                    line-height: 29px;
+                    letter-spacing: 0.05em;
+                    text-transform: uppercase;
+                }
+
+                img {
+                    width: 40px;
+                    height: 40px;
+                    margin-right: 20px;
+                }
+            }
+        }
+
+        .first-screen__basket {
+            width: 91px;
+            height: 30px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            //align-items: center;
+            margin-top: 3px;
 
             img {
-                width: 5px;
-                height: 5px;
-            }
-        }
-
-        .item:nth-child(3) {
-            margin-right: 0px;
-        }
-
-        .item-logo {
-            width: 201px;
-            height: 41px;
-            margin-left: 91px;
-            margin-right: 90px;
-
-            .item-title {
-                font-weight: bold;
-                font-size: 24px;
-                line-height: 29px;
-                letter-spacing: 0.05em;
-                text-transform: uppercase;
+                width: 30px;
+                height: 30px;
+                
             }
 
-            img {
-                width: 40px;
-                height: 40px;
-                margin-right: 20px;
+            .group {
+                display: flex;
+                flex-direction: row;
+                justify-content: flex-end;
+                margin-top: 10px;
+                //align-items: center;
+                .img_rectangle {
+                    width: 15px;
+                    height: 15px;
+                }
+
+                .img_polygon {
+                    width: 33px;
+                    height: 15px;
+                }
             }
         }
     }

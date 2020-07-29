@@ -3,9 +3,16 @@ block variables
 
 header
   .container
-    +item-header('Для мужчин', 'w_105_h_17')
-    +item-header('Для женщин', 'w_109_h_17')
-    +item-header('Для детей', 'w_89_h_17')
-    +item-logo('the loop')
-    +item-right('Оплата')
-    +item-right('Доставка')
+    .first-screen__main-menu
+      +item-header('Для мужчин', 'w_105_h_17')
+      +item-header('Для женщин', 'w_109_h_17')
+      +item-header('Для детей', 'w_89_h_17')
+      +item-logo('the loop')
+      +item-right('Оплата')
+      +item-right('Доставка')
+    .first-screen__basket
+      img(src="./assets/img/shopping-basket-button.png")
+      .group
+        img(class='img_rectangle', src='./assets/img/Polygon copy.png')
+        img.img_polygon(src="./assets/img/Rectangle 2.png")
+      
