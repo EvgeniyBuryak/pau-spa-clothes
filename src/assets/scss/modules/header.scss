@@ -83,7 +83,7 @@ header {
 
         .first-screen__basket {
             grid-column: 2;
-            grid-row: 1;
+            grid-row: 1; <--- нормас
             width: 91px;
             height: 30px;
             display: flex;
