@@ -8,11 +8,15 @@ header
       +item-header('Для женщин', 'w_109_h_17')
       +item-header('Для детей', 'w_89_h_17')
       +item-logo('the loop')
-      +item-right('Оплата')
-      +item-right('Доставка')
+      +item-text('Оплата')
+      +item-text('Доставка')
     .first-screen__basket
       img(src="./assets/img/shopping-basket-button.png")
       .group
         img(class='img_rectangle', src='./assets/img/Polygon copy.png')
         img.img_polygon(src="./assets/img/Rectangle 2.png")
-      
+    .first-screen__text
+      +item-text('Зимняя распродажа')
+      +item-text_upper('скидки до 90%')
+      .item-rectangle
+        h3.item-title= 'смотреть модели'

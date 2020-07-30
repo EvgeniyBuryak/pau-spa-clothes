@@ -3,6 +3,8 @@
 // header style
 header {
     font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: normal;
     background: url('../img/background.png') repeat-y;
     margin: 0;
     padding: 0;
@@ -13,12 +15,18 @@ header {
     .container {
         width: 1110px;
         margin: 0 auto;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
+        //display: flex;
+        display: grid;
+        grid-template-columns: 92% 8%; //repeat(8, 50px);
+        grid-template-rows: 40px 160px 224px;
+        //grid-gap: 10px;
+        //grid-auto-rows: minmax(100px, auto);
+        //flex-direction: row;
+        //justify-content: space-between;
         //align-items: center;
-
         .first-screen__main-menu {
+            grid-column: 1 / 3;
+            grid-row: 1;
             display: flex;
             flex-direction: row;
             justify-content: flex-start;
@@ -30,7 +38,6 @@ header {
                 margin-right: 35px;
 
                 .item-title {
-                    font-style: normal;
                     font-weight: 500;
                     font-size: 14px;
                     line-height: 17px;
@@ -75,6 +82,8 @@ header {
         }
 
         .first-screen__basket {
+            grid-column: 2;
+            grid-row: 1;
             width: 91px;
             height: 30px;
             display: flex;
@@ -86,7 +95,6 @@ header {
             img {
                 width: 30px;
                 height: 30px;
-                
             }
 
             .group {
@@ -103,6 +111,50 @@ header {
                 .img_polygon {
                     width: 33px;
                     height: 15px;
+                }
+            }
+        }
+
+        .first-screen__text {
+            grid-column: 1;
+            grid-row: 3;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+
+            .item-title {
+                font-size: 30px;
+                line-height: 37px;
+                letter-spacing: 0.02em;
+                color: #000000;
+            }
+
+            .item-title_upper {
+                font-weight: bold;
+                font-size: 55px;
+                line-height: 67px;
+                letter-spacing: 0.04em;
+                text-transform: uppercase;
+            }
+
+            .item-title_padding-bottom {
+                padding-bottom: 14px;
+            }
+
+            .item-rectangle {
+                width: 240px;
+                height: 55px;
+                background-color: #D7B399;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                .item-title {
+                    font-size: 16px;
+                    line-height: 20px;
+                    letter-spacing: 0.03em;
+                    text-transform: uppercase;
+                    color: #FFF;
                 }
             }
         }

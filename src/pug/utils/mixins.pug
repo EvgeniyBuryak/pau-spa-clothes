@@ -9,9 +9,13 @@ mixin item-logo(title)
     img(src="./assets/img/Frame.png")
     h2.item-title= title
 
-mixin item-right(title)
+mixin item-text(title)
   .item
     h2.item-title= title
+
+mixin item-text_upper(title)
+  .item
+    h2.item-title.item-title_upper.item-title_padding-bottom= title
     
 // Mixins for body
 mixin item(title, descr)
