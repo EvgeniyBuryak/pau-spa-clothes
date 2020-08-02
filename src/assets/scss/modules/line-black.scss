@@ -1,0 +1,41 @@
+.container_without-indent {
+    width: 1920px;
+    background-color: #000;
+    margin: 0;
+    padding: 0;
+}
+
+.container__free-shiping {
+    width: 1920px;
+    height: 235px;
+    display: grid;
+    grid-template-columns: 665px 1fr 667px;
+    grid-template-rows: 80px 37px 23px 26px 69px;
+}
+
+.title {
+    grid-row: 4;
+    grid-column: 2;
+    font-weight: 300;
+    font-size: 21px;
+    line-height: 26px;
+    color: #FFF;
+}
+
+.title_position_center {
+    text-align: center;
+}
+
+.title_weight_300 {
+    font-weight: 300;
+}
+
+.title_color_white {
+    grid-row: 2;
+    grid-column: 2;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 37px;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+}
