@@ -24,6 +24,15 @@ header {
         //flex-direction: row;
         //justify-content: space-between;
         //align-items: center;
+
+        .item-title__size_24 {
+            font-weight: bold;
+            font-size: 24px;
+            line-height: 29px;
+            letter-spacing: 0.05em;
+            text-transform: uppercase;
+        }
+
         .first-screen__main-menu {
             grid-column: 1 / 8;
             grid-row: 1;
@@ -65,13 +74,6 @@ header {
                 margin-left: 91px;
                 margin-right: 90px;
 
-                .item-title {
-                    font-weight: bold;
-                    font-size: 24px;
-                    line-height: 29px;
-                    letter-spacing: 0.05em;
-                    text-transform: uppercase;
-                }
 
                 img {
                     width: 40px;
