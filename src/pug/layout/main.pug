@@ -5,6 +5,7 @@ doctype html
 html(lang='en')
   head
     meta(charset='utf-8')
+    meta(name='viewport' content='width=device-width, initial-scale=1')
     title #{title}
     meta(name="description", content=description)
     block head
@@ -14,6 +15,7 @@ html(lang='en')
       #app
         include ../includes/modules/header
         include ../includes/modules/line-black
+        include ../includes/modules/gender-col
         .content-wrapper
           block content
         include ../includes/modules/footer
