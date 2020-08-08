@@ -12,6 +12,7 @@ header {
     padding: 0;
     height: 800px;
     max-width: 1920px;
+    width: 100%;
     padding-top: 50px;
 }
 .header__container {
@@ -19,6 +20,10 @@ header {
     // if value "screen" set other @media, nothing don't work
     @media screen and (max-width: $desktopWidth) {
         width: 70%;
+    }
+
+    @media screen and (max-width: $smDesktopWidth) {
+        width: 75%;
     }
 
     display: grid;
@@ -34,6 +39,11 @@ header {
 
         @media screen and (max-width: $desktopWidth) {
             justify-content: space-between;
+        }
+
+        @media screen and (max-width: $smDesktopWidth) {
+            //grid-column: 1 / 7;
+            margin-right: 30px;
         }
     }
 
@@ -110,18 +120,31 @@ header {
             margin-left: 31px;
             margin-right: 30px;
         }
+
+        @media all and (max-width: $smDesktopWidth) {
+            width: 141px;
+            margin-left: 21px;
+            margin-right: 20px;
+        }
     }
 
     .main-menu__img {
         width: 40px;
         height: 40px;
-        margin-right: 20px;
+        margin-right: 10px;
     }
 
     .header__basket {
         grid-column: 8;
         grid-row: 1;
         margin-top: 3px;
+
+        @media screen and (max-width: $smDesktopWidth) {
+            grid-column: 7 / 8;
+            margin-left: 80px;
+            //display: flex;
+            //justify-content: flex-end;
+        }
     }
 
     .basket {
@@ -137,6 +160,10 @@ header {
 
         @media all and (max-width: $desktopWidth) {
             width: 75px;
+        }
+
+        @media screen and (max-width: $smDesktopWidth) {
+            //justify-content: flex-end;
         }
     }
 
@@ -204,7 +231,7 @@ header {
         justify-content: space-between;
     }
 
-    .item__title_size_30 {
+    .discount__title_size_30 {
         font-weight: normal;
         font-size: 30px;
         line-height: 37px;
@@ -237,6 +264,11 @@ header {
         @media all and (max-width: $desktopWidth) {
             font-size: 40px;
             line-height: 52px;
+        }
+
+        @media all and (max-width: $smDesktopWidth) {
+            font-size: 30px;
+            line-height: 42px;
         }
     }
 
@@ -277,6 +309,11 @@ header {
             font-size: 17px;
             line-height: 22px;
         }
+
+        @media all and (max-width: $smDesktopWidth) {
+            font-size: 15px;
+            line-height: 17px;
+        }
     }
 
     .item__title_size_42 {
@@ -286,6 +323,21 @@ header {
         letter-spacing: 0.02em;
         text-transform: uppercase;
         color: #D84033;
+
+        @media all and (max-width: $largerWidth) {
+            font-size: 37px;
+            line-height: 46px;
+        }
+
+        @media all and (max-width: $desktopWidth) {
+            font-size: 32px;
+            line-height: 41px;
+        }
+
+        @media all and (max-width: $smDesktopWidth) {
+            font-size: 27px;
+            line-height: 36px;
+        }
     }
 
     .first-screen__image {
@@ -309,6 +361,18 @@ header {
         z-index: 3;
         top: 83px;
         right: 0;
+
+        @media all and (max-width: $largerWidth) {
+            top: 78px;
+        }
+
+        @media all and (max-width: $desktopWidth) {
+            top: 73px;
+        }
+
+        @media all and (max-width: $smDesktopWidth) {
+            top: 68px;
+        }
     }
 
     .first-screen__slider-controls {

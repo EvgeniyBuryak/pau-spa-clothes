@@ -1,16 +1,24 @@
+@import "../utils/vars";
 .container_without-indent {
-    //width: 1920px;
+    width: 100%;
     background-color: #212121;
     margin: 0;
     padding: 0;
 }
 
 .container__free-shiping {
-    //width: 1920px;
     height: 235px;
     display: grid;
-    grid-template-columns: 665px 1fr 667px;
+    grid-template-columns: 34.6354166667% 1fr 34.7395833333%;
     grid-template-rows: 80px 37px 23px 26px 69px;
+
+    @media all and (max-width: $desktopWidth) {
+        grid-template-columns: 31.6354166667% 1fr 31.7395833333%;
+    }
+
+    @media all and (max-width: $smDesktopWidth) {
+        grid-template-columns: 26.6354166667% 1fr 26.7395833333%;
+    }
 }
 
 .title {
@@ -20,6 +28,16 @@
     font-size: 21px;
     line-height: 26px;
     color: #FFF;
+
+    @media all and (max-width: $desktopWidth) {
+        font-size: 18px;
+        line-height: 23px;
+    }
+
+    @media all and (max-width: $smDesktopWidth) {
+        font-size: 17px;
+        line-height: 22px;
+    }
 }
 
 .title_position_center {
@@ -38,4 +56,14 @@
     line-height: 37px;
     letter-spacing: 0.02em;
     text-transform: uppercase;
+
+    @media all and (max-width: $desktopWidth) {
+        font-size: 22px;
+        line-height: 29px;
+    }
+
+    @media all and (max-width: $smDesktopWidth) {
+        font-size: 20px;
+        line-height: 25px;
+    }
 }

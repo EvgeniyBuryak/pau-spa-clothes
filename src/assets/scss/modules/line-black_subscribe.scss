@@ -1,0 +1,108 @@
+@import "../utils/vars";
+@import "header";
+/*.container_without-indent {
+    width: 100%;
+    background-color: #212121;
+    margin: 0;
+    padding: 0;
+}*/
+
+.container__subscribe {
+    height: 180px;
+    display: grid;
+    grid-template-columns: 21.09375% 29.9479166667% 3.125% 13.28125% 1.82291666667% 9.63541666667% 21.09375%;
+    grid-template-rows: 70px 40px 70px;
+
+    @media all and (max-width: $desktopWidth) {
+        //grid-template-columns: 31.6354166667% 1fr 31.7395833333%;
+    }
+
+    @media all and (max-width: $smDesktopWidth) {
+        //grid-template-columns: 26.6354166667% 1fr 26.7395833333%;
+    }
+}
+
+.title_indent_top2-donw1 {
+    padding: 2px 0 1px 0;
+}
+
+.rectangle {
+    width: 100%;
+    height: 100%;
+    background-color: #D7B399;
+    grid-row: 2;
+    grid-column: 6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.rectangle_e-mail {
+    background-color: #F9F6F1;
+    grid-row: 2;
+    grid-column: 4;
+    justify-content: flex-start;
+}
+
+.rectangle__title {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    //letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #FFF;
+}
+
+.rectangle__title_e-mail {
+    padding-left: 20px;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 15px;
+    letter-spacing: 0.02em;
+    text-transform: none;
+    color: #8D8D8D;
+}
+
+/*.title {
+    grid-row: 4;
+    grid-column: 2;
+    font-weight: 300;
+    font-size: 21px;
+    line-height: 26px;
+    color: #FFF;
+
+    @media all and (max-width: $desktopWidth) {
+        font-size: 18px;
+        line-height: 23px;
+    }
+
+    @media all and (max-width: $smDesktopWidth) {
+        font-size: 17px;
+        line-height: 22px;
+    }
+}
+
+.title_weight_300 {
+    font-weight: 300;
+}
+
+.title_color_white {
+    grid-row: 2;
+    grid-column: 2;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 37px;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+
+    @media all and (max-width: $desktopWidth) {
+        font-size: 22px;
+        line-height: 29px;
+    }
+
+    @media all and (max-width: $smDesktopWidth) {
+        font-size: 20px;
+        line-height: 25px;
+    }
+}*/
