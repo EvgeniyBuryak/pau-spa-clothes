@@ -22,3 +22,8 @@ mixin item(title, descr)
   .item
     h2.item-title= title
     p.item-descr= descr
+
+mixin image(title , descr)
+  .item-catalog
+    img.catalog__img(src="./assets/img/Rectangle-" + title + ".png")
+    p.item-descr.item-catalog__item-descr= descr

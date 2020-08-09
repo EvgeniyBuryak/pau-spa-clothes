@@ -7,11 +7,12 @@ block variables
 
 block content
   section
-    .container
-      +item('item title', 'item descr')
-      +item('item title', 'item descr')
-      +item('item title', 'item descr')
-  example-component
+    .container.container__catalog
+      include ../includes/modules/catalog
+      //- +item('item title', 'item descr')
+      //- +item('item title', 'item descr')
+      //- +item('item title', 'item descr')
+  //- example-component
 
 
 block script

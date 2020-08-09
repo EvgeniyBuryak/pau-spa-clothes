@@ -1,0 +1,35 @@
+.container__catalog {
+    margin: 0 405px;
+}
+
+.catalog {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.catalog__img {
+    position: relative;
+    z-index: 1;
+}
+
+.item-catalog {
+    position: relative;
+    z-index: 1;
+}
+
+.item-catalog__item-descr {
+    position: absolute;
+    z-index: 2;
+    top: 186px;
+    right: 154px;
+}
+
+.item-descr {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 21px;
+    line-height: 26px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #000;
+}
