@@ -1,4 +1,4 @@
-// Mixins for header
+//- Mixins for header
 mixin item-header(title)
   .item
     h1.item__title.item__title_ident-right_5px= title
@@ -12,8 +12,17 @@ mixin item-text_upper(title)
   .item.item_indet_zero
     h2.item__title.item__title_upper.item__title_padding-bottom= title
     
-// Mixins for body
+//- Mixins for body
 mixin item(title, descr)
   .item
     h2.item-title= title
     p.item-descr= descr
+
+mixin item-collection(title, descr)
+  .item.item_display_grid
+      h2.item-title= title
+        <span class="item-title_weight_300"> коллекция</span>
+      p.item-descr= descr
+      img.item__img(src="./assets/img/rectangel-arrow.png")
+
+//- Mixins for footer

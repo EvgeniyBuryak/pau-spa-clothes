@@ -13,11 +13,15 @@
     grid-template-rows: 80px 37px 23px 26px 69px;
 
     @media all and (max-width: $desktopWidth) {
+        height: 185px;
         grid-template-columns: 31.6354166667% 1fr 31.7395833333%;
+        grid-template-rows: 60px 27px 23px 26px 49px;
     }
 
     @media all and (max-width: $smDesktopWidth) {
+        height: 160px;
         grid-template-columns: 26.6354166667% 1fr 26.7395833333%;
+        grid-template-rows: 50px 27px 18px 26px 39px;
     }
 }
 

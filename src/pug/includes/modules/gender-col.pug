@@ -1,5 +1,9 @@
-.container_col
-  .men-col
-    +item('мужская коллекция', 'Обувь, полуверы, костюмы')
+.collection-collumns
+  .gen-col.collection-collumns__gen-col
+    +item-collection('мужская', 'Обувь, полуверы, костюмы')
+    img.gen-col__img(src="./assets/img/man.png")
+  .gen-col.gen-col_woman-color.collection-collumns__gen-col.collection-collumns__gen-col_woman-grid
+    +item-collection('женская', 'Обувь, полуверы, костюмы')
+    img.gen-col__img(src="./assets/img/woman.png")
     
   
