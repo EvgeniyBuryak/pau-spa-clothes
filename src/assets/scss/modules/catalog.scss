@@ -1,30 +1,36 @@
+@import "../utils/vars";
+.section__catalog {
+    padding: 0;
+}
+
 .container__catalog {
-    margin: 0 405px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+.catalog:nth-child(5) {
+    order: 8;
+    //padding-top: 5px;
 }
 
 .catalog {
-    display: flex;
-    flex-flow: row wrap;
-}
-
-.catalog__img {
     position: relative;
     z-index: 1;
 }
 
-.item-catalog {
-    position: relative;
-    z-index: 1;
+.catalog__img{
+    // empty
 }
 
-.item-catalog__item-descr {
+.catalog-descr_position {
     position: absolute;
     z-index: 2;
     top: 186px;
     right: 154px;
 }
 
-.item-descr {
+.catalog-descr {
     font-style: normal;
     font-weight: 300;
     font-size: 21px;
@@ -32,4 +38,14 @@
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: #000;
+
+    @media all and (max-width: $desktopWidth) {
+        font-size: 17px;
+        line-height: 22px;
+    }
+
+    @media all and (max-width: $smDesktopWidth) {
+        font-size: 16px;
+        line-height: 21px;
+    }
 }

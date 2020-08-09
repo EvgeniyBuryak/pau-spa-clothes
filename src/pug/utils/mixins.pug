@@ -18,10 +18,10 @@ mixin item(title, descr)
     h2.item-title= title
     p.item-descr= descr
 
-mixin image(title , descr)
-  .item-catalog
+mixin catalog-image(title , descr)
+  .catalog
     img.catalog__img(src="./assets/img/Rectangle-" + title + ".png")
-    p.item-descr.item-catalog__item-descr= descr
+    p.catalog-descr.catalog-descr_position= descr
 
 mixin item-collection(title, descr)
   .item.item_display_grid
@@ -29,5 +29,21 @@ mixin item-collection(title, descr)
         <span class="item-title_weight_300"> коллекция</span>
       p.item-descr= descr
       img.item__img(src="./assets/img/rectangel-arrow.png")
+
+mixin new-item(title, descr)
+  .item-model
+    svg.item-model__svg(width='255' height='350')
+      line(x1='0' y1='0' x2='25' y2='0' stroke="#D7B399" stroke-width="4")
+      line(x1='0' y1='0' x2='0' y2='25' stroke="#D7B399" stroke-width="4")
+      line(x1='230' y1='0' x2='255' y2='0' stroke="#D7B399" stroke-width="4")
+      line(x1='255' y1='0' x2='255' y2='25' stroke="#D7B399" stroke-width="4")
+      line(x1='230' y1='350' x2='255' y2='350' stroke="#D7B399" stroke-width="4")
+      line(x1='255' y1='350' x2='255' y2='325' stroke="#D7B399" stroke-width="4")
+      line(x1='0' y1='350' x2='25' y2='350' stroke="#D7B399" stroke-width="4")
+      line(x1='0' y1='350' x2='0' y2='325' stroke="#D7B399" stroke-width="4")
+    img.item-model__img(src="./assets/img/dress.png")
+    h4.item-model__title= title
+    p.item-model__descr= descr
+      <span>&#8381;</span>
 
 //- Mixins for footer

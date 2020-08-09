@@ -16,9 +16,10 @@ html(lang='en')
         include ../includes/modules/header
         include ../includes/modules/line-black
         include ../includes/modules/gender-col
-        include ../includes/modules/line-black_subscribe.pug
         .content-wrapper
-          block content          
+          block content
+          block new-model
+        include ../includes/modules/line-black_subscribe.pug
         include ../includes/modules/footer
 
     block script
