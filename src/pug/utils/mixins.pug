@@ -1,23 +1,18 @@
-// Mixins for header
-mixin item-header(title, number)
-  .item(class='item_' + number)
-    h1.item-title.item-title_ident-right_5px= title
-    img(src="./assets/img/Polygon.png")
-
-mixin item-logo(title)
-  .item.item-logo
-    img(src="./assets/img/Frame.png")
-    h2.item-title_size_24= title
+//- Mixins for header
+mixin item-header(title)
+  .item
+    h1.item__title.item__title_ident-right_5px= title
+    img.item__img(src="./assets/img/Polygon.png")
 
 mixin item-text(title)
   .item
-    h2.item-title= title
+    h2.item__title= title
 
 mixin item-text_upper(title)
-  .item
-    h2.item-title.item-title_upper.item-title_padding-bottom= title
+  .item.item_indet_zero
+    h2.item__title.item__title_upper.item__title_padding-bottom= title
     
-// Mixins for body
+//- Mixins for body
 mixin item(title, descr)
   .item
     h2.item-title= title
@@ -27,3 +22,12 @@ mixin image(title , descr)
   .item-catalog
     img.catalog__img(src="./assets/img/Rectangle-" + title + ".png")
     p.item-descr.item-catalog__item-descr= descr
+
+mixin item-collection(title, descr)
+  .item.item_display_grid
+      h2.item-title= title
+        <span class="item-title_weight_300"> коллекция</span>
+      p.item-descr= descr
+      img.item__img(src="./assets/img/rectangel-arrow.png")
+
+//- Mixins for footer
