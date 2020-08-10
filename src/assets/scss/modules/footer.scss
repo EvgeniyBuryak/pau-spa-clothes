@@ -1,1 +1,100 @@
+@import "../utils/vars";
+
 // footer style
+footer {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    color: #FFF;
+    background-color: #212121;
+    height: 311px;
+    max-width: 1920px;
+    width: 100%;
+}
+.footer__container {
+    //width: 57.8125%;
+    // if value "screen" set other @media, nothing don't work
+    @media screen and (max-width: $desktopWidth) {
+        width: 70%;
+    }
+
+    @media screen and (max-width: $smDesktopWidth) {
+        width: 75%;
+    }
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 200px 224px 116px 84px 124px 76px 137px 53px 102px 1fr;
+    grid-template-rows: 73px 1fr 78px;
+    //grid-column-gap: 405px 224px 84px 76px 53px 399px;
+}
+.main-menu {
+    grid-row: 2;
+    grid-column: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.main-menu__logo {
+    display: flex;
+    align-items: center;
+    width: 201px;
+    height: 40px;
+
+    @media all and (max-width: $desktopWidth) {
+        width: 161px;
+    }
+
+    @media all and (max-width: $smDesktopWidth) {
+        width: 141px;
+    }
+}
+
+.main-menu__img {
+    width: 40px;
+    height: 40px;
+    margin-right: 20px;
+}
+
+.item__title_size_24 {
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 29px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+
+    @media all and (max-width: $desktopWidth) {
+        font-size: 17px;
+        line-height: 22px;
+    }
+
+    @media all and (max-width: $smDesktopWidth) {
+        font-size: 15px;
+        line-height: 17px;
+    }
+}
+
+.main-menu__title {
+    font-size: 14px;
+    line-height: 22px;
+}
+
+.footer-links {
+    grid-row: 2;
+}
+
+.footer-links_grid-column_4 {
+    grid-column: 4;
+}
+
+.footer-links_grid-column_6 {
+    grid-column: 6;
+}
+
+.footer-links_grid-column_8 {
+    grid-column: 8;
+}
+
+.footer-links_grid-column_10 {
+    grid-column: 10;
+}

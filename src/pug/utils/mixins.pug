@@ -46,4 +46,16 @@ mixin new-item(title, descr)
     p.item-model__descr= descr
       <span>&#8381;</span>
 
+mixin new-model(title)
+  section.section__new-models
+    .container__new-models
+      h2.new-item__title= title
+      +new-item('Коктельное платье', '40 000')
+      +new-item('Коктельное платье', '40 000')
+      +new-item('Коктельное платье', '40 000')
+      +new-item('Коктельное платье', '40 000')
+      .new-item__button.button
+        .button__title= 'все модели'
+        img(src="./assets/img/Arrow.png")
+
 //- Mixins for footer

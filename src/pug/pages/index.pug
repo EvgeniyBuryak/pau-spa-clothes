@@ -19,17 +19,11 @@ block content
   //- example-component
 
 block new-model
-  section.section__new-models
-    .container__new-models
-      h2.new-item__title новые модели
-      +new-item('Коктельное платье', '40 000')
-      +new-item('Коктельное платье', '40 000')
-      +new-item('Коктельное платье', '40 000')
-      +new-item('Коктельное платье', '40 000')
-      .new-item__button.button
-        .button__title= 'все модели'
-        img(src="./assets/img/Arrow.png")
+  +new-model('новые модели')
 
+block discount
+  +new-model('скидки до 90%')
+    
 block script
   script(type='text/javascript').
     const foo = true;
