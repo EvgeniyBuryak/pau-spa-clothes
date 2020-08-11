@@ -56,9 +56,9 @@
     grid-row: 3;
     position: relative;
     z-index: 1;
-    //display: flex;
-    //flex-flow: column wrap;
-    //align-items: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 .item-model_3 {
     @media all and (max-width: $smDesktopWidth) {
