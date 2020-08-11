@@ -4,26 +4,35 @@ footer
       .main-menu__logo
         img.main-menu__img(src="./assets/img/Frame.png")
         h2.item__title_size_24= 'the loop'
-      p.main-menu__title= 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla faucibus egestas elit, at eleifend elit ornare ut.'
+      p.main-menu__title_color_FFF= 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla faucibus egestas elit, at eleifend elit ornare ut.'
     .footer-links.footer-links_grid-column_4
-      h4= 'основные ссылки'
+      h4.footer-title__size_10= 'основные ссылки'
       p= 'О компании'
       p= 'Каталог'
       p= 'Доставка'
       p= 'Оплата'
     .footer-links.footer-links_grid-column_6
-      h4= 'категории'
+      h4.footer-title__size_10= 'категории'
       p= 'Мужская одежда'
       p= 'Женская одежда'
       p= 'Детская одежда'
       p= 'Для животных'
     .footer-links.footer-links_grid-column_8
-      h4= 'полезные ссылки'
+      h4.footer-title__size_10= 'полезные ссылки'
       p= 'Таблица размеров'
       p= 'Блог о моде'
       p= 'Наша миссия'
     .footer-links.footer-links_grid-column_10
-      h4= 'соц сети'
-      p= 'vk'
-      p= 'facebook'
-      p= 'instagram'
+      h4.footer-title__size_10= 'соц сети'
+      .footer-icon
+        img.footer-icon__img.footer-icon__img_indent-left_0(src="./assets/img/vkontakte.png")
+        p= 'VK.com'
+      .footer-icon
+        img.footer-icon__img(src="./assets/img/facebook.png")
+        p= 'Facebook'
+      .footer-icon
+        img.footer-icon__img(src="./assets/img/instagram.png")
+        p= 'Instagram'
+  .footer-bottom
+    <span>Copyright &copy; 2019. Все права защищены</span>      
+    <span>Политика приватности</span>

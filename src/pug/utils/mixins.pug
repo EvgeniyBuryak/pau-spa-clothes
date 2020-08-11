@@ -30,8 +30,8 @@ mixin item-collection(title, descr)
       p.item-descr= descr
       img.item__img(src="./assets/img/rectangel-arrow.png")
 
-mixin new-item(title, descr)
-  .item-model
+mixin new-item(title, descr, number)
+  .item-model(class='item-model_' + number)
     svg.item-model__svg(width='255' height='350')
       line(x1='0' y1='0' x2='25' y2='0' stroke="#D7B399" stroke-width="4")
       line(x1='0' y1='0' x2='0' y2='25' stroke="#D7B399" stroke-width="4")
@@ -50,10 +50,10 @@ mixin new-model(title)
   section.section__new-models
     .container__new-models
       h2.new-item__title= title
-      +new-item('Коктельное платье', '40 000')
-      +new-item('Коктельное платье', '40 000')
-      +new-item('Коктельное платье', '40 000')
-      +new-item('Коктельное платье', '40 000')
+      +new-item('Коктельное платье', '40 000', '1')
+      +new-item('Коктельное платье', '40 000', '2')
+      +new-item('Коктельное платье', '40 000', '3')
+      +new-item('Коктельное платье', '40 000', '4')
       .new-item__button.button
         .button__title= 'все модели'
         img(src="./assets/img/Arrow.png")
